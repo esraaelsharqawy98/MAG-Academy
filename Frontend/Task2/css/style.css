@@ -11,17 +11,7 @@ body {
   margin: auto;
 }
 
-/* nav */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 30px;
-}
-nav .logo {
-  width: 150px;
-}
-nav .btn {
+.btn {
   padding: 15px 20px;
   background-color: #ff8a08;
   border: 1px solid #ff8a08;
@@ -31,6 +21,19 @@ nav .btn {
   margin-right: 20px;
   cursor: pointer;
   text-transform: uppercase;
+}
+a {
+  text-decoration: none;
+}
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+nav .logo {
+  width: 150px;
 }
 
 /* movie cards */
@@ -136,6 +139,116 @@ main .actor-card p {
   text-align: center;
   margin-top: 10px;
 }
+
+/* form */
+.form-container {
+  width: 40%;
+  margin: auto;
+  border: 1px solid #041329;
+  border-radius: 20px;
+  padding: 70px 30px;
+  background-color: #041329;
+}
+.form-container .heading {
+  text-align: center;
+  color: #ff8a08;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.form-container p {
+  color: #908e8e;
+  font-size: 20px;
+}
+.form-container p a{
+  color: #ff8a08;
+}
+form {
+  width: 100%;
+}
+label {
+  color: #908e8e;
+  font-size: 19px;
+}
+input ,select,#birth{
+  font-size: 19px;
+}
+form .btn {
+  padding: 15px 40px;
+}
+form .form-row {
+  position: relative;
+}
+.form-check {
+  display: flex;
+  justify-content: space-between;
+}
+.form-row,
+.form-check {
+  margin-bottom: 30px;
+}
+#email,#pass,#birth,#country{
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+} 
+#birth,#country{
+  margin-top: 15px;
+  background-color: #030d1c;
+  color: #908e8e;
+  padding-left: 10px;
+}
+#email,
+#pass {
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 1px solid #908e8e;
+  transition: all 0.3s;
+}
+#email:focus,
+#pass:focus {
+  border-bottom-color: #ff8a08;
+}
+form .icon {
+  color: #908e8e;
+  font-size: 19px;
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+/* Hide the default checkbox */
+input[type="checkbox"] {
+  display: none;
+}
+/* Style the custom checkbox */
+input[type="checkbox"] + label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+input[type="checkbox"] + label::before {
+  content: "\2714";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #908e8e;
+  text-align: center;
+  line-height: 16px;
+  vertical-align: middle;
+  color: transparent;
+  margin-right: 8px;
+}
+/* Style checked state */
+input[type="checkbox"]:checked + label::before {
+  color: #ff8a08;
+  border-color: #ff8a08;
+}
+form .link {
+  text-decoration: underline;
+  color: #908e8e;
+  font-size: 19px;
+}
+/* form */
 
 /* footer */
 footer {

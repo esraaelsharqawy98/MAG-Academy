@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Page</title>
+    <!-- style link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- nav -->
+        <nav>
+           <a href="index.html"><img src="images/logo.png" alt="logo image" class="logo"></a> 
+        </nav>
+        <!-- nav -->
+        <!-- main -->
+        <main>
+            <div class="form-container">
+                <h2 class="heading">Create Account</h2>
+                <form action="" method="post" id="signup">
+                    <div class="form-row">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required autocomplete="off">
+                    </div>
+                    <div class="form-row">
+                        <i class="fa-solid fa-eye icon"></i>
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">Birth date</label>
+                        <input type="date" name="birth" id="birth">
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">Country</label>
+                        <select name="country" id="country">
+                            <option value="" disabled selected>-- choose country --</option>
+                            <option value="egy">Egypt</option>
+                            <option value="us">United States</option>
+                            <option value="uae">United Arab Emirates</option>
+                            <option value="uk">United Kingdom </option>
+                            <option value="ksa">Saudi Arabia</option>
+                        </select>
+                    </div>
+                    <div class="form-row">
+                       <a href="index.html"><button class="btn" type="submit">Create</button></a> 
+                    </div>
+                </form>
+                   <p>Already have account? <a href="login.html">login</a></p>
+            </div>
+        </main>
+        <!-- main -->
+    </div>
+</body>
+
+</html>
